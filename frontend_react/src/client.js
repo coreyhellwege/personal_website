@@ -10,4 +10,4 @@ export const client = sanityClient({
 })
 
 const builder = imageUrlBuilder(client) // Helper function to generate image urls from Sanity image records
-export const urlFor = (source) => builder.image(source)
+export const urlFor = source => builder.image(source)
