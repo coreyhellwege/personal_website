@@ -1,15 +1,17 @@
 import React, { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 import { images } from '../../constants'
+import { urlFor, client } from '../../client'
 import './About.scss'
 
-const about = [
-    { title: 'Web Development', description: 'I am a full-stack web developer', imgUrl: images.about01 },
-    { title: 'Graphic Design', description: 'I am a full-stack web developer', imgUrl: images.about02 },
-    { title: 'Something Else', description: 'I am a full-stack web developer', imgUrl: images.about03 }
-]
-
 const About = () => {
+    const [about, setAbout] = useState([])
+
+    useEffect(() => {
+        const query = '*[_type == "about"]'
+        client.fetch(query).then(data => setAbout(data)) // Fetch data from Sanity
+    }, [])
+    
     return <>
         <h2 className='head-text'>I know that <span>Good Design</span><br /> means <span>Good Business</span></h2>
         <div className='app__profiles'>
