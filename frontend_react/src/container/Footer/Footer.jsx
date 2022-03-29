@@ -1,7 +1,7 @@
 import React from 'react'
 import { images } from '../../constants'
 import { AppWrap, MotionWrap } from '../../wrapper'
-import { ContactForm } from '../../container'
+// import { ContactForm } from '../../container'
 import './Footer.scss'
 
 const Footer = () => {
@@ -17,7 +17,7 @@ const Footer = () => {
             <p className='p-text'>@2022 Corey Hellwege</p>
             <p className='p-text'>All rights reserved</p>
         </div>
-        <ContactForm />
+        {/* <ContactForm /> */}
     </>
 }
 
