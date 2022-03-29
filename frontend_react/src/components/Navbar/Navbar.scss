@@ -5,7 +5,7 @@
     justify-content: space-between;
     align-items: center;
 
-    padding: 1rem 2rem;
+    padding: 1.25rem;
     background: rgba($color: #ffffff, $alpha: 0.25);
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px); // cater for older browsers
@@ -21,8 +21,8 @@
 
     // Style nested properties
     img {
-        width: 90px;
-        height: 20px;
+        width: 40px;
+        height: 40px;
 
         // XL devices
         @media screen and (min-width: 2000px) {
