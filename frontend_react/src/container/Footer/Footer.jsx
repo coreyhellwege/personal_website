@@ -44,6 +44,10 @@ const Footer = () => {
                 <a href='mailto:coreyhellwege@gmail.com' className='p-text'>coreyhellwege@gmail.com</a>
             </div>
         </div>
+        <div className='copyright'>
+            <p className='p-text'>@2022 Corey Hellwege</p>
+            <p className='p-text'>All rights reserved</p>
+        </div>
         {!isFormSubmitted ?
         <div className='app__footer-form app__flex'>
             <div className='app__flex'>
