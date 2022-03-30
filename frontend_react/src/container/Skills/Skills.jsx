@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 import ReactTooltip from 'react-tooltip'
+import { PortableText } from '@portabletext/react'
 import { AppWrap, MotionWrap } from '../../wrapper'
 import { urlFor, client } from '../../client'
 import './Skills.scss'
@@ -56,7 +57,8 @@ const Skills = () => {
                                         key={work.name} 
                                     >
                                         <h4 className='bold-text'>{work.name}</h4>
-                                        <p className='p-text'>{work.company}</p>
+                                        <h5 className='p-text'>{work.company}</h5>
+                                        <p className='p-text'><PortableText value={work.description} /></p>
                                     </motion.div>
                                     <ReactTooltip
                                         id={work.name}
@@ -64,7 +66,7 @@ const Skills = () => {
                                         arrowColor='#fff'
                                         className='skills-tooltip'
                                     >
-                                        {work.desc}
+                                        {work.tooltip}
                                     </ReactTooltip>
                                 </>
                             ))}
