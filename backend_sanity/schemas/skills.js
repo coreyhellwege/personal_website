@@ -20,6 +20,11 @@ export default{
             options: {
               hotspot: true
             }
+        },
+        {
+            name: 'order',
+            title: 'Order',
+            type: 'string'
         }
     ]
 }

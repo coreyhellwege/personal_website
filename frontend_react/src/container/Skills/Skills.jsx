@@ -17,6 +17,8 @@ const Skills = () => {
         client.fetch(expQuery).then(data => setExperience(data))
         client.fetch(skillsQuery).then(data => setSkills(data))
     }, [])
+    
+    skills.sort((a, b) => a.order - b.order) // sort skills by order number
 
     return <>
         <h2 className='head-text'>Skills & Experience</h2>
