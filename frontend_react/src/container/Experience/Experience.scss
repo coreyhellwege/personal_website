@@ -1,0 +1,142 @@
+.app__experience {
+    flex: 1;
+    width: 100%;
+    flex-direction: column;
+}
+  
+.app__experience-container {
+    width: 80%;
+    margin-top: 3rem;
+  
+    display: flex;
+    flex-direction: row;
+  
+    // Mobile & Tablet devices
+    @media screen and (max-width: 900px) {
+        width: 100%;
+        flex-direction: column;
+    }
+}
+  
+.app__experience-exp {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+  
+    // Mobile & Tablet devices
+    @media screen and (max-width: 900px) {
+        margin-top: 2rem;
+    }
+}
+  
+.app__experience-exp-item {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+  
+.app__experience-exp-works {
+    flex: 1;
+  
+    .app__experience-exp-work {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+        padding-bottom: 50px;
+        margin-bottom: 1rem;
+
+        .app__experience-exp-work-company {
+            margin: 1rem 0 0 1rem;
+        }
+
+        .app__experience-exp-work-company-desc {
+            margin: 0 0 1rem 1rem;
+        }
+
+        .app__experience-exp-work-description {
+            margin-top: 0.5rem;
+        }
+
+        h4 {
+            font-weight: 500;
+        }
+
+        h5 {
+            font-weight: 700;
+        }
+
+        p {
+            font-weight: 400;
+            color: var(--gray-color);
+            padding-top: 10px;
+        }
+    }
+}
+  
+.app__experience-exp-year {
+    margin-right: 3rem;
+    min-width: 10%;
+  
+    p {
+        font-weight: 800;
+        color: var(--secondary-color);
+    }
+  
+    // Mobile devices
+    @media screen and (max-width: 450px) {
+        margin-right: 1rem;
+    }
+}
+
+.app__experience-exp-timeline {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-right: 3rem;
+    height: 100%;
+
+    .app__experience-exp-line {
+        height: 100%;
+        border-left: 1px solid rgba(0, 0, 0, 0.25);
+    }
+
+    .app__experience-exp-circle {
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        border: 1px solid rgba(0, 0, 0, 0.25);
+    }
+  
+    // Mobile devices
+    @media screen and (max-width: 450px) {
+        margin-right: 1rem;
+    }
+}
+  
+// .app__experience-exp--tooltip {
+//     // Need to append the !important tag otherwise styling won't be applied to the ReactTooltip
+//     max-width: 300px !important;
+//     background-color: var(--white-color) !important;
+//     box-shadow: 0 0 25px rgba(0, 0, 0, 0.1) !important;
+//     border-radius: 5px !important;
+//     padding: 1rem !important;
+//     color: var(--gray-color) !important;
+//     text-align: left !important;
+//     line-height: 1.5 !important;
+//     opacity: 1 !important;
+  
+//     // XL devices
+//     @media screen and (min-width: 2000px) {
+//         font-size: 1.75rem !important;
+//         max-width: 500px !important;
+//         line-height: 2 !important;
+//     }
+// }
