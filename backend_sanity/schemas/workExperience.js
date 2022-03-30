@@ -14,8 +14,8 @@ export default {
             type: 'string'
         },
         {
-            name: 'tooltip',
-            title: 'Tooltip',
+            name: 'companyDesc',
+            title: 'Company Description',
             type: 'text'
         },
         {
