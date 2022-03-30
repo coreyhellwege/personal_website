@@ -5,7 +5,7 @@ export default {
     fields: [
         {
             name: 'name',
-            title: 'name',
+            title: 'Name',
             type: 'string'
         },
         {
@@ -14,9 +14,15 @@ export default {
             type: 'string'
         },
         {
-            name: 'desc',
-            title: 'Desc',
+            name: 'tooltip',
+            title: 'Tooltip',
             type: 'text'
+        },
+        {
+            name: 'description',
+            title: 'Description', 
+            type: 'array', 
+            of: [{type: 'block'}]
         }
     ]
 }
