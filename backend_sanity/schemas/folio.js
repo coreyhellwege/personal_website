@@ -1,16 +1,11 @@
 export default{
-    name: 'about',
-    title: 'About',
+    name: 'folio',
+    title: 'Folio',
     type: 'document',
     fields: [
         {
             name: 'title',
             title: 'Title',
-            type: 'string'
-        },
-        {
-            name: 'description',
-            title: 'Description',
             type: 'string'
         },
         {
