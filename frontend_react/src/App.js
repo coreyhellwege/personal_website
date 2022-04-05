@@ -7,10 +7,10 @@ const App = () => {
     return <div className='app'>
         <Navbar />
         <Header />
-        <Folio />
         <Projects />
         <Skills />
         <Experience />
+        <Folio />
         <Education />
         <Footer />
     </div>
