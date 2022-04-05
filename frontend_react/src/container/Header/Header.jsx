@@ -27,23 +27,21 @@ const Header = () => {
                     </div>
                 </div>
                 <div className='tag-cmp app__flex'>
-                    <p className='p-text'>A Full-Stack Web Developer</p>
-                    <p className='p-text'>and designer from Melbourne</p>
+                    <p className='p-text'>A Full-Stack Web Developer and Designer</p>
                 </div>
             </div>
         </motion.div>
-        <motion.div whileInView={{ opacity: [0, 1] }} transition={{ duration: 0.5, delayChildren: 0.5 }} className='app__header-img'>
-            <img src={images.profile} alt='profile_bg' />
+        <motion.div whileInView={{ opacity: [0, 1] }} transition={{ duration: 0.5, delayChildren: 0.5 }} className='app__header-img app__flex'>
             <motion.img 
                 whileInView={{ scale: [0, 1] }} 
                 transition={{ duration: 1, ease: 'easeInOut' }} 
-                className='overlay_circle'
-                src={images.circle}
-                alt='profile_circle'
+                className='profile_image'
+                src={images.profile}
+                alt='profile_bg'
             />
         </motion.div>
         <motion.div variant={scaleVariants} whileInView={scaleVariants.whileInView} className='app__header-circles'>
-            {[ images.node, images.react, images.redux ].map((circle, index) => (
+            {[ images.node, images.react, images.javascript ].map((circle, index) => (
                 <div className='circle-cmp app__flex' key={`circle-${index}`}>
                     <img src={circle} alt='circle' />
                 </div>
@@ -52,4 +50,4 @@ const Header = () => {
     </div>
 }
 
-export default AppWrap(Header, 'home')
+export default AppWrap(Header, 'home', 'app__primarybg')

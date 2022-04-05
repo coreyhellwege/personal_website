@@ -18,54 +18,48 @@ const Experience = () => {
     
     return <>
         <h2 className='head-text'>Experience</h2>
-        <div className='app__experience-container'>
-            <motion.div className='app__experience-exp'>
-                {experience?.map((exp) => (
-                    <motion.div className='app__experience-exp-item' key={exp.year}>
-                        <div className='app__experience-exp-timeline'>
-                            <div className='app__experience-exp-circle' />
-                            <div className='app__experience-exp-line' />
-                        </div>
+        <motion.div className='app__experience-exp'>
+            {experience?.map((exp) => (
+                <motion.div className='app__experience-exp-item' key={exp.year}>
+                    <div className='app__experience-exp-timeline'>
+                        <div className='app__experience-exp-circle' />
+                        <div className='app__experience-exp-line' />
+                    </div>
+                    <motion.div className='app__experience-exp-works'>
                         <div className='app__experience-exp-year'>
-                            <p className='bold-text'>{exp.year}></p>
+                            <p className='bold-text'>{exp.year}</p>
                         </div>
-                        <motion.div className='app__experience-exp-works'>
-                            {exp.works?.map((work) => (
-                                <>
-                                    <motion.div
-                                        whileInView={{ opacity: [0,1] }}
-                                        transition={{ duration: 0.5 }}
-                                        className='app__experience-exp-work'
-                                        data-tip
-                                        data-for={work.name}
-                                        key={work.name} 
-                                    >
-                                        <h4 className='bold-text'>{work.name}</h4>
-                                        <div className='app__experience-exp-work-company'>
-                                            <h5 className='p-text'>{work.company}</h5>
-                                        </div>
-                                        <div className='app__experience-exp-work-company-desc'>
-                                            <p className='p-text italic-text'>{work.companyDesc}</p>
-                                        </div>
-                                        <div className='app__experience-exp-work-description p-text'>
-                                            <PortableText value={work.description} />
-                                        </div>
-                                    </motion.div>
-                                    {/* <ReactTooltip
-                                        id={work.name}
-                                        effect='solid'
-                                        arrowColor='#fff'
-                                        className='app__experience-exp--tooltip'
-                                    >
-                                        {work.tooltip}
-                                    </ReactTooltip> */}
-                                </>
-                            ))}
-                        </motion.div>
+                        {exp.works?.map((work) => (
+                            <>
+                                <motion.div
+                                    whileInView={{ opacity: [0,1] }}
+                                    transition={{ duration: 0.5 }}
+                                    className='app__experience-exp-work'
+                                    data-tip
+                                    data-for={work.name}
+                                    key={work.name} 
+                                >
+                                    <h4 className='bold-text'>{work.name}</h4>
+                                        <h5 className='p-text' style={{ marginLeft: 20, marginTop: 20 }}>{work.company}</h5>
+                                        <p className='p-text italic-text' style={{ marginLeft: 20, marginBottom: 20 }}>{work.companyDesc}</p>
+                                    <div className='p-text' style={{ marginLeft: 10 }}>
+                                        <PortableText value={work.description} />
+                                    </div>
+                                </motion.div>
+                                {/* <ReactTooltip
+                                    id={work.name}
+                                    effect='solid'
+                                    arrowColor='#fff'
+                                    className='app__experience-exp--tooltip'
+                                >
+                                    {work.tooltip}
+                                </ReactTooltip> */}
+                            </>
+                        ))}
                     </motion.div>
-                ))}
-            </motion.div>
-        </div>
+                </motion.div>
+            ))}
+        </motion.div>
     </>
 }
 

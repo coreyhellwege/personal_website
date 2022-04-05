@@ -32,7 +32,7 @@ const Projects = () => {
     }
 
     return <>
-        <h2 className='head-text'>Personal <span>Projects</span></h2>
+        <h2 className='head-text'>Personal Projects</h2>
         <div className='app__project-description'>
             <p className='p-text'>
                 Building side applications in my spare time is my favourite way of learning new technologies and honing my skills.
