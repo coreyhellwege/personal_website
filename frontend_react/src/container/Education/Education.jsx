@@ -22,7 +22,7 @@ const Education = () => {
                     whileHover={{ scale: 1.1 }}
                     transition={{ duration: 0.5, type: 'tween' }}
                     className='app__education-item'
-                    key={item.title + index}
+                    key={item.title}
                 >
                     <div className='app__education-content'>
                         <div>
