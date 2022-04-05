@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react'
-import { motion } from 'framer-motion'
 import { HiChevronLeft, HiChevronRight } from 'react-icons/hi'
 import { AppWrap, MotionWrap } from '../../wrapper'
 import { urlFor, client } from '../../client'
@@ -23,14 +22,14 @@ const Folio = () => {
     const left = folio[previousIndex], middle = folio[currentIndex], right = folio[nextIndex]
 
     return <>
-        <motion.div className='app__folio-top-container'>
+        <div className='app__folio-top-container'>
             <h2 className='head-text'>Graphic Design</h2>
             <p className='p-text'>
                 I began my career as a Graphic Designer after studying my undergraduate degree in Communication Design at university. <br />
                 Whilst living overseas in Vancouver, Canada 🇨🇦 I worked for the Donnelly Hospitality Group as an in-house designer.
             </p>
-        </motion.div>
-        <motion.div className='app__folio-bottom-container'>
+        </div>
+        <div className='app__folio-bottom-container'>
             {folio.length && (
                 <div className='app__folio-image-container app__flex'>
                     <img src={urlFor(left.imgUrl)} alt={left.title} />
@@ -54,8 +53,8 @@ const Folio = () => {
                     <HiChevronRight />
                 </div>
             </div>
-        </motion.div>
+        </div>
     </>
 }
 
-export default AppWrap(MotionWrap(Folio, 'app__folio'), 'folio', 'app__whitebg')
+export default AppWrap(MotionWrap(Folio, 'app__folio'), 'design', 'app__primarybg')
