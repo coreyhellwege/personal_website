@@ -18,14 +18,14 @@ const Experience = () => {
     
     return <>
         <h2 className='head-text'>Experience</h2>
-        <motion.div className='app__experience-exp'>
+        <div className='app__experience-exp'>
             {experience?.map((exp) => (
-                <motion.div className='app__experience-exp-item' key={exp.year}>
+                <div className='app__experience-exp-item'>
                     <div className='app__experience-exp-timeline'>
                         <div className='app__experience-exp-circle' />
                         <div className='app__experience-exp-line' />
                     </div>
-                    <motion.div className='app__experience-exp-works'>
+                    <div className='app__experience-exp-works'>
                         <div className='app__experience-exp-year'>
                             <p className='bold-text'>{exp.year}</p>
                         </div>
@@ -56,10 +56,10 @@ const Experience = () => {
                                 </ReactTooltip> */}
                             </>
                         ))}
-                    </motion.div>
-                </motion.div>
+                    </div>
+                </div>
             ))}
-        </motion.div>
+        </div>
     </>
 }
 
