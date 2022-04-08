@@ -86,7 +86,7 @@ const Projects = () => {
                         </motion.div>
                     </div>
                     <div className='app__project-content app__flex'>
-                        <h4 className='bold-text'>{project.title}</h4>
+                        <h4>{project.title}</h4>
                         <p className='p-text' style={{ marginTop: 10 }}>{project.description}</p>
                         <div className='app__project-tag app__flex'>
                             <p className='p-text'>{project.year}</p>

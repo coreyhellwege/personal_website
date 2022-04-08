@@ -26,7 +26,7 @@
         border-radius: 0.5rem;
         background-color: var(--primary-color);
         color: #000;
-        font-weight: 800;
+        font-weight: 600;
 
         cursor: pointer;
         transition: all 0.3s ease;
@@ -63,8 +63,8 @@
         padding: 1rem;
         border-radius: 0.5rem;
 
-        box-shadow: 0 0 25px rgba(0, 0, 0, 0.15);
-        background-color: var(--primary-color);
+        box-shadow: 0 0 25px rgba(0, 0, 0, 0.13);
+        background-color: var(--white-color);
 
         transition: all 0.3s ease;
   
@@ -121,7 +121,7 @@
 
         margin: 1rem;
         font-family: var(--font-base);
-        font-weight: 800;
+        font-weight: 600;
         cursor: pointer;
         transition: all 0.3s ease;
 
@@ -140,6 +140,7 @@
     flex-direction: column;
   
     h4 {
+        font-weight: 500;
         margin-top: 1rem;
         line-height: 1.5;
 
@@ -153,7 +154,7 @@
 
         padding: 0.5rem 1rem;
         border-radius: 10px;
-        background-color: var(--primary-color);
+        background-color: var(--white-color);
         top: -25px;
 
         p {
