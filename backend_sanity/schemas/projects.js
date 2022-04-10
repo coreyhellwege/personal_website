@@ -47,6 +47,11 @@ export default {
                     type:'string'
                 }
             ]
+        },
+        {
+            name: 'order',
+            title: 'Order',
+            type: 'string'
         }
     ]
 }

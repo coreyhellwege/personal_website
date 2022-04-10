@@ -12,6 +12,8 @@ const Education = () => {
         const query = '*[_type == "education"]'
         client.fetch(query).then(data => setEducation(data)) // Fetch data from Sanity
     }, [])
+
+    education.sort((a, b) => a.order - b.order) // sort by order number
     
     return <>
         <h2 className='head-text'>Education</h2>

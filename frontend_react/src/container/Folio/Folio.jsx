@@ -24,12 +24,12 @@ const Folio = () => {
     return <>
         <div className='app__folio-top-container'>
             <h2 className='head-text'>Graphic Design</h2>
-            <div className='app__folio-description app__flex'>
+            <div className='app__flex'>
                 <p className='p-text'>
-                    I began my career as a Graphic Designer after studying my undergraduates degree in Communication Design at Swinburne University.
-                    Whilst living overseas in Vancouver, Canada 🇨🇦 I worked as an in-house designer for the Donnelly Hospitality Group, mainly producing 
-                    marketing and branding collateral for the company's various pubs, restaurants and cocktail bars.
-                    Here's some of my poster art which I proudly decorated our venues with. 
+                    I began my career as a Graphic Designer after studying my undergraduate degree in Communication Design.
+                    Whilst living overseas in Vancouver, Canada 🇨🇦 I worked as an in-house designer for the Donnelly Group in the hospitality industry. 
+                    I mainly designed branding and marketing material for the company's various pubs, restaurants and cocktail bars.
+                    Here's some of the poster art I proudly decorated our venues with. 
                 </p>
             </div>
         </div>

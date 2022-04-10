@@ -21,6 +21,8 @@ const Projects = () => {
         })
     }, [])
 
+    projects.sort((a, b) => a.order - b.order) // sort by order number
+
     const handleProjectFilter = (item) => {
         setActiveFilter(item)
         setAnimateCard([{ y: 100, opacity: 0 }])
@@ -35,7 +37,7 @@ const Projects = () => {
         <h2 className='head-text'>Personal Projects</h2>
         <div className='app__project-description'>
             <p className='p-text'>
-                Building side applications in my spare time is my favourite way of learning new technologies and honing my skills.
+                Building side applications in my spare time is my favourite way to learn new technologies and hone my skills.
             </p>
         </div>
         <div className='app__project-filter'>
@@ -63,7 +65,7 @@ const Projects = () => {
                             transition={{ duration: 0.25, ease: 'easeInOut', staggerChildren: 0.5 }}
                             className='app__project-hover app__flex'
                         >
-                            <a href={project.projectLink} target='_blank' rel='noreferrer'>
+                            {/* <a href={project.projectLink} target='_blank' rel='noreferrer'>
                                 <motion.div
                                     whileInView={{ scale: [0, 1] }}
                                     whileHover={{ scale: [1, 0.9] }}
@@ -72,7 +74,7 @@ const Projects = () => {
                                 >
                                     <AiFillEye />
                                 </motion.div>
-                            </a>
+                            </a> */}
                             <a href={project.codeLink} target='_blank' rel='noreferrer'>
                                 <motion.div
                                     whileInView={{ scale: [0, 1] }}

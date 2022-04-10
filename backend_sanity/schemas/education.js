@@ -22,6 +22,11 @@ export default {
             name: 'description',
             title: 'Description',
             type: 'text'
+        },
+        {
+            name: 'order',
+            title: 'Order',
+            type: 'string'
         }
     ]
 }
