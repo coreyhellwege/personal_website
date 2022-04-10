@@ -34,7 +34,7 @@ const TechStack = () => {
                         </motion.div>
                     ))}
                 </div>
-                <div className='app__flex'>
+                <div className='app__tech_stack-tagline app__flex'>
                     <h2>Home is where the JavaScript is.</h2>
                 </div>
             </div>
