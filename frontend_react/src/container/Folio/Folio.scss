@@ -8,6 +8,18 @@
 .app__folio-top-container {
     width: 100%;
 
+    @media screen and (min-width: 1000px) {
+        width: 80%;
+    }
+
+    @media screen and (min-width: 1500px) {
+        width: 70%;
+    }
+    
+    @media screen and (min-width: 2000px) {
+        width: 50%;
+    }
+
     p {
         margin: 2rem 2rem;
         text-align: center;
@@ -20,8 +32,18 @@
 }
 
 .app__folio-bottom-container {
-    @media screen and (max-width: 768px) {
-        width: 100%;
+    width: 100%;
+
+    @media screen and (min-width: 1300px) {
+        width: 90%;
+    }
+
+    @media screen and (min-width: 1500px) {
+        width: 80%;
+    }
+
+    @media screen and (min-width: 2000px) {
+        width: 70%;
     }
 
     .app__folio-image-container {
@@ -80,16 +102,6 @@
 
                 svg {
                     color: var(--white-color);
-                }
-            }
-        
-            @media screen and (min-width: 2000px) {
-                width: 100px;
-                height: 100px;
-        
-                svg {
-                    width: 45px;
-                    height: 45px;
                 }
             }
         }

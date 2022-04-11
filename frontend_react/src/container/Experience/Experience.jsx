@@ -17,8 +17,8 @@ const Experience = () => {
     }, [])
     
     return <>
-        <h2 className='head-text'>Experience</h2>
-        <div className='app__experience-exp'>
+        <div className='app__experience-exp app__flex'>
+            <h2 className='head-text' style={{ marginBottom: 40 }}>Experience</h2>
             {experience?.map((exp) => (
                 <div className='app__experience-exp-item'>
                     <div className='app__experience-exp-timeline'>
