@@ -85,15 +85,10 @@
     }
 
     @media screen and (min-width: 800px) {
-        height: 40%;
-    }
-
-    @media screen and (min-width: 1200px) {
         height: 60%;
     }
 
     div {
-        width: 100px;
         height: 100px;
         border-radius: 50%;
 
@@ -101,7 +96,6 @@
         box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 
         img {
-            width: 60%;
             height: 60%;
         }
     }
