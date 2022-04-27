@@ -100,4 +100,4 @@ const Projects = () => {
     </>
 }
 
-export default AppWrap(MotionWrap(Projects, 'app__projects'), 'projects', 'app__whitebg')
+export default AppWrap(MotionWrap(Projects, 'app__projects'), 'projects', 'app__secondary-bg')

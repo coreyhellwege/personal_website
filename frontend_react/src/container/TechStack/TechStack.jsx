@@ -139,4 +139,4 @@ const TechStack = () => {
     </>
 }
 
-export default AppWrap(MotionWrap(TechStack, 'app__tech_stack'), 'tech stack', 'app__primarybg')
+export default AppWrap(MotionWrap(TechStack, 'app__tech_stack'), 'tech stack', 'app__primary-bg')

@@ -61,4 +61,4 @@ const Folio = () => {
     </>
 }
 
-export default AppWrap(MotionWrap(Folio, 'app__folio'), 'design', 'app__primarybg')
+export default AppWrap(MotionWrap(Folio, 'app__folio'), 'design', 'app__primary-bg')

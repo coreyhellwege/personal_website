@@ -2,28 +2,20 @@
     background-color: var(--primary-color);
     font-family: var(--font-base);
 }
-
-#light {
-    background-color: --white-color;
-}
-
-#dark {
-    background-color: --gray-color;
-}
   
-#light .app__whitebg {
+#light .app__secondary-bg {
     background-color: var(--white-color);
 }
 
-#dark .app__whitebg {
+#dark .app__secondary-bg {
     background-color: var(--gray-color);
 }
   
-#light .app__primarybg {
+#light .app__primary-bg {
     background-color: var(--primary-color);
 }
 
-#dark .app__primarybg {
+#dark .app__primary-bg {
     background-color: var(--black-color);
 }
 

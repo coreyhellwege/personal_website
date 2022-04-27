@@ -40,4 +40,4 @@ const Education = () => {
     </>
 }
 
-export default AppWrap(MotionWrap(Education, 'app__education'), 'education', 'app__whitebg')
+export default AppWrap(MotionWrap(Education, 'app__education'), 'education', 'app__secondary-bg')

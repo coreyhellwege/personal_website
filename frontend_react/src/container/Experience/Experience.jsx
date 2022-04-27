@@ -63,4 +63,4 @@ const Experience = () => {
     </>
 }
 
-export default AppWrap(MotionWrap(Experience, 'app__experience'), 'experience', 'app__whitebg')
+export default AppWrap(MotionWrap(Experience, 'app__experience'), 'experience', 'app__secondary-bg')

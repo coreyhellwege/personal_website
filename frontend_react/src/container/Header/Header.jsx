@@ -50,4 +50,4 @@ const Header = () => {
     </div>
 }
 
-export default AppWrap(Header, 'home', 'app__primarybg')
+export default AppWrap(Header, 'home', 'app__primary-bg')
