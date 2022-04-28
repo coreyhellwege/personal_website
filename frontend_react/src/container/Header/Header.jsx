@@ -15,7 +15,7 @@ const scaleVariants = {
     }
 }
 
-const Header = () => {
+const Header = ({ theme }) => {
     return <div className='app__header app__flex'>
         <motion.div whileInView={{ x: [-100, 0], opacity: [0, 1] }} transition={{ duration: 0.5 }} className='app__header-info'>
             <div className='app__header-badge'>
@@ -36,7 +36,7 @@ const Header = () => {
                 whileInView={{ scale: [0, 1] }} 
                 transition={{ duration: 1, ease: 'easeInOut' }} 
                 className='profile_image'
-                src={images.profile}
+                src={theme === 'light' ? images.day_profile : images.night_profile}
                 alt='profile_bg'
             />
         </motion.div>

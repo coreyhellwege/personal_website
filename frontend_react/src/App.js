@@ -1,5 +1,4 @@
-import React from 'react'
-import { createContext, useState } from 'react'
+import React, { createContext, useState } from 'react'
 import ReactSwitch from 'react-switch'
 import { BsLightningChargeFill, BsMoonFill } from 'react-icons/bs'
 import { Folio, Footer, Header, TechStack, Experience, Education, Projects } from './container'
@@ -26,12 +25,12 @@ const App = () => {
                     uncheckedIcon={<BsLightningChargeFill className='app__switch-icons light' />}
                     checkedIcon={<BsMoonFill className='app__switch-icons dark' />}
                     offColor='#fff'
-                    onColor='#e4e4e4'
+                    onColor='#302d29'
                     offHandleColor='#eef3f8'
-                    onHandleColor='#fff'
+                    onHandleColor='#1E1B18'
                     handleDiameter={20}
                 />
-                <Header />
+                <Header theme={theme} />
                 <Projects />
                 <TechStack />
                 <Experience />
