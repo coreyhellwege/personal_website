@@ -1,17 +1,19 @@
 .app__navbar {
     width: 100%;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     padding: 1.25rem;
-    background: rgba($color: #ffffff, $alpha: 0.25);
-    backdrop-filter: blur(4px);
-    -webkit-backdrop-filter: blur(4px); // cater for older browsers
-    border: 1px solid rgba($color: #ffffff, $alpha: 0.18);
     position: fixed;
     z-index: 2; // place above the content
+}
+
+#light .app__navbar {
+    background: rgba($color: #eef3f8, $alpha: 0.85);
+}
+
+#dark .app__navbar {
+    background: rgba($color: #1E1B18, $alpha: 0.85); // --black-chocolate
 }
 
 .app__navbar-logo {
@@ -34,7 +36,6 @@
 
     list-style: none;
 
-    // Style nested properties
     li {
         margin: 0 1rem;
         cursor: pointer;
@@ -51,7 +52,6 @@
         }
 
         a {
-            color: var(--gray-color);
             text-decoration: none; // remove default underline
             flex-direction: column;
 
@@ -60,21 +60,47 @@
             letter-spacing: 0.1em;
 
             transition: all 0.3s ease-in-out;
-
-            &:hover {
-                color: var(--secondary-color);
-            }
-        }
-
-        &:hover {
-            div {
-                background: var(--secondary-color);
-            }
         }
     }
 
     @media screen and (max-width: 900px) {
         display: none;
+    }
+}
+
+#light .app__navbar-links {
+    li {
+        a {
+            color: var(--gray-color);
+
+            &:hover {
+                color: var(--charcoal);
+            }
+        }
+
+        &:hover {
+            div {
+                background: var(--charcoal);
+            }
+        }
+    }
+}
+
+#dark .app__navbar-links {
+    li {
+        a {
+            color: var(--middle-grey);
+
+            &:hover {
+                color: var(--middle-grey-highlight);
+            }
+        }
+
+        &:hover {
+            div {
+                background: var(--middle-grey-highlight);
+            }
+        }
     }
 }
 
@@ -87,12 +113,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--secondary-color);
   
     svg {
         width: 70%;
         height: 70%;
-        color: var(--white-color);
         cursor: pointer;
     }
   
@@ -105,7 +129,7 @@
 
         padding: 1rem;
 
-        width: 80%;
+        width: 60%;
         height: 100vh;
         
         display: flex;
@@ -113,15 +137,9 @@
         align-items: flex-end;
         flex-direction: column;
         
-        background-color: var(--white-color);
-
-        /* top box shadow */
-        box-shadow: 0px 0px 20px rgba(168, 168, 168, 0.15);
-
         svg {
-            width: 35px;
-            height: 35px;
-            color: var(--secondary-color);
+            width: 25px;
+            height: 25px;
             margin: 0.5rem 1rem;
         }
   
@@ -141,7 +159,6 @@
                 margin: 1rem;
     
                 a {
-                    color: var(--gray-color);
                     text-decoration: none;
                     font-size: 1rem;
                     text-transform: uppercase;
@@ -149,10 +166,6 @@
                     letter-spacing: 0.1em;
         
                     transition: all 0.3s ease-in-out;
-        
-                    &:hover {
-                        color: var(--secondary-color);
-                    }
                 }
             }
         }
@@ -164,5 +177,72 @@
   
     @media screen and (min-width: 900px) {
         display: none;
+    }
+}
+
+#light .app__navbar-menu {
+    background-color: var(--white-color);
+
+    svg {
+        color: var(--gray-color);
+    }
+
+    div {        
+        background-color: var(--primary-color);
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+
+
+        svg {
+            color: var(--gray-color);
+
+            &:hover {
+                color: var(--charcoal);
+            }
+        }
+  
+        ul {    
+            li {
+                a {
+                    color: var(--gray-color);
+        
+                    &:hover {
+                        color: var(--charcoal);
+                    }
+                }
+            }
+        }
+    }
+}
+
+#dark .app__navbar-menu {
+    background-color: var(--soft-black);
+
+    svg {
+        color: var(--middle-grey);
+    }
+
+    div {        
+        background-color: var(--black-chocolate);
+        box-shadow: 0px 0px 20px rgba(168, 168, 168, 0.15);
+
+        svg {
+            color: var(--middle-grey);
+
+            &:hover {
+                color: var(--middle-grey-highlight);
+            }
+        }
+  
+        ul {    
+            li {
+                a {
+                    color: var(--middle-grey);
+        
+                    &:hover {
+                        color: var(--middle-grey-highlight);
+                    }
+                }
+            }
+        }
     }
 }

@@ -58,8 +58,15 @@
 
         p {
             font-weight: 400;
-            color: var(--gray-color);
             padding-top: 10px;
+        }
+    }
+}
+
+#dark .app__experience-exp-works {
+    .app__experience-exp-work {
+        h4 {
+            color: var(--white-color);
         }
     }
 }
@@ -85,13 +92,31 @@
 
     .app__experience-exp-line {
         height: 100%;
-        border-left: 1px solid rgba(0, 0, 0, 0.25);
     }
 
     .app__experience-exp-circle {
         width: 15px;
         height: 15px;
         border-radius: 50%;
+    }
+}
+
+#light .app__experience-exp-timeline {
+    .app__experience-exp-line {
+        border-left: 1px solid rgba(0, 0, 0, 0.25);
+    }
+
+    .app__experience-exp-circle {
+        border: 2px solid var(--secondary-color);
+    }
+}
+
+#dark .app__experience-exp-timeline {
+    .app__experience-exp-line {
+        border-left: 1px solid rgba(255, 255, 255, 0.25);
+    }
+
+    .app__experience-exp-circle {
         border: 2px solid var(--secondary-color);
     }
 }

@@ -6,11 +6,24 @@
     --primary-color: #eef3f8;
     --secondary-color: #f7df1e;
     --black-color: #030303;
-    --lightGray-color: #e4e4e4;
+    --light-gray-color: #e4e4e4;
     --gray-color: #6b7688;
+    --gray-color-highlight: #8f97a4;
     --sun-color: #fed000;
     --moon-color: #46364a;
     --white-color: #ffffff;
+
+    --raisin-black: #332E3C;
+    --grullo: #a29587;
+    --charcoal: #373F47;
+    --middle-grey: #8B8982;
+    --middle-grey-highlight: #c5c3bc;
+    --ghost-white: #FFFAFF;
+    --black-chocolate: #1E1B18;
+    --light-chocolate: #272522;
+    --soft-black: #302d29;
+    --soft-black-highlight: #3f3b36;
+    --black-velvet: #24221f;
 }
 
 * {

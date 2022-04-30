@@ -17,7 +17,8 @@ import sass from '../assets/sass.png';
 import typescript from '../assets/typescript.png';
 import vue from '../assets/vue.png';
 
-import profile from '../assets/profile.png';
+import day_profile from '../assets/day-profile.png';
+import night_profile from '../assets/night-profile.png';
 import circle from '../assets/circle.svg';
 import logo from '../assets/logo.png';
 
@@ -40,7 +41,8 @@ export default {
     sass,
     typescript,
     vue,
-    profile,
+    day_profile,
+    night_profile,
     circle,
     logo,
 }

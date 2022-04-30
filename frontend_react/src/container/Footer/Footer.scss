@@ -62,9 +62,14 @@
     }
 }
   
-.app__footer-cards .app__footer-card:last-child {
+#light .app__footer-cards .app__footer-card:last-child {
     background-color: var(--white-color);
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+#dark .app__footer-cards .app__footer-card:last-child {
+    background-color: var(--light-chocolate);
+    box-shadow: 0 0 20px rgba($color: #272522, $alpha: 0.2); // --light-chocolate
 }
 
 .copyright {

@@ -24,23 +24,44 @@
     .app__project-filter-item {
         padding: 0.5rem 1rem;
         border-radius: 0.5rem;
-        background-color: var(--primary-color);
-        color: #000;
         font-weight: 600;
 
         cursor: pointer;
         transition: all 0.3s ease;
         margin: 0.5rem;
+    }
+}
+
+#light .app__project-filter {
+    .app__project-filter-item {
+        background-color: var(--primary-color);
+        color: var(--charcoal);
 
         &:hover {
-            background-color: var(--secondary-color);
+            background-color: var(--charcoal);
             color: #fff;
         }
     }
-  
+
     .item-active {
-        background-color: var(--secondary-color);
+        background-color: var(--charcoal);
         color: #fff;
+    }
+}
+
+#dark .app__project-filter {
+    .app__project-filter-item {
+        background-color: var(--soft-black);
+
+        &:hover {
+            background-color: var(--ghost-white);
+            color: var(--soft-black);
+        }
+    }
+
+    .item-active {
+        background-color: var(--ghost-white);
+        color: var(--soft-black);
     }
 }
 
@@ -59,15 +80,26 @@
         padding: 1rem;
         border-radius: 0.5rem;
 
-        box-shadow: 0 0 25px rgba(0, 0, 0, 0.13);
-        background-color: var(--white-color);
-
         transition: all 0.3s ease;
   
         @media screen and (max-width: 300px) {
             width: 100%;
             margin: 1rem;
         }
+    }
+}
+
+#light .app__project-portfolio {
+    .app__project-item {
+        box-shadow: 0 0 25px rgba(0, 0, 0, 0.13);
+        background-color: var(--white-color);
+    }
+}
+
+#dark .app__project-portfolio {
+    .app__project-item {
+        box-shadow: 0 0 20px rgba($color: #272522, $alpha: 0.2); // --light-chocolate
+        background-color: var(--soft-black);
     }
 }
   
@@ -136,12 +168,33 @@
 
         padding: 0.5rem 1rem;
         border-radius: 10px;
-        background-color: var(--white-color);
         top: -25px;
 
         p {
             font-weight: 500;
+        }
+    }
+}
+
+#light .app__project-content {
+    .app__project-tag {
+        background-color: var(--white-color);
+        
+        p {
             color: var(--secondary-color);
+        }
+    }
+}
+
+#dark .app__project-content {
+    h4 {
+        color: var(--white-color);
+    }
+    .app__project-tag {
+        background-color: var(--soft-black);
+
+        p {
+            color: var(--middle-grey);
         }
     }
 }
