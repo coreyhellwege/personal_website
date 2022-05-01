@@ -107,12 +107,8 @@
             }
 
             &:hover {
-                background-color: var(--secondary-color);
-                border: 1px solid var(--secondary-color);
-
-                svg {
-                    color: var(--white-color);
-                }
+                background-color: var(--light-gray-color);
+                border-color: var(--light-gray-color);
             }
         }
     }
@@ -129,10 +125,7 @@
 
             &:hover {
                 background-color: var(--soft-black-highlight);
-
-                svg {
-                    color: var(--black-chocolate);
-                }
+                border-color: var(--soft-black-highlight);
             }
         }
     }
