@@ -16,15 +16,31 @@
     background: rgba($color: #1E1B18, $alpha: 0.85); // --black-chocolate
 }
 
-.app__navbar-logo {
+.app__navbar-logo-section {
     display: flex;
     justify-content: flex-start;
     align-items: center;
 
-    // Style nested properties
     img {
         width: 40px;
         height: 40px;
+    }
+
+    .app__theme-switch {
+        margin-left: 1.5rem;
+    
+        .app__theme-switch-icons {
+            width: 80%;
+            height: 80%;
+            padding: 5px 0 0 5px;
+    
+            &.light {
+                color: var(--sun-color);
+            }
+            &.dark {
+                color: var(--ghost-white);
+            }
+        }
     }
 }
 
@@ -128,9 +144,11 @@
         z-index: 5;
 
         padding: 1rem;
-
         width: 60%;
-        height: 100vh;
+        
+        @media screen and (max-width: 500px) {
+            width: 90%;
+        }
         
         display: flex;
         justify-content: flex-end;
