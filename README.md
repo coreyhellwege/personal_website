@@ -58,7 +58,12 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
+<h4 align="center">Light mode ☀️</h4>
+
 ![Screenshot 1][screenshot-1]
+
+<h4 align="center">Dark mode 🌙</h4>
+
 ![Screenshot 2][screenshot-2]
 
 <p align="right"><a href="#top">back to top</a></p>
