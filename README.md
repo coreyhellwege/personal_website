@@ -173,7 +173,5 @@ If you have a suggestion that would make this better, please fork the repo and c
 [stars-url]: https://github.com/coreyhellwege/personal_website/stargazers
 [issues-shield]: https://img.shields.io/github/issues/coreyhellwege/personal_website.svg?style=for-the-badge
 [issues-url]: https://github.com/coreyhellwege/personal_website/issues
-[license-shield]: https://img.shields.io/github/license/coreyhellwege/personal_website.svg?style=for-the-badge
-[license-url]: /LICENSE.txt
 [screenshot-1]: ./frontend_react/src/assets/day-screenshot.png
 [screenshot-2]: ./frontend_react/src/assets/night-screenshot.png
