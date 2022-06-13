@@ -43,7 +43,7 @@ const TechStack = () => {
                     <h4>Where I started</h4>
                     <p className='p-text'>
                         My foundation in programming began at Coder Academy, where I learnt Ruby & Ruby on Rails before moving onto HTML5, CSS3 and vanilla JavaScript.
-                        After learning the fundamentals, we moved into modern web development and started building web applications using the MERN stack.
+                        After learning the fundamentals we moved into modern web development, building web applications using the MERN stack.
                         We learnt about document databases with MongoDB and Mongoose, as well as relational databases with PostgreSQL.
                     </p>
                     <p className='p-text'>
@@ -70,7 +70,7 @@ const TechStack = () => {
                         as a purely interpreted language before being optimised with compilers, such as Babel.
                     </p>
                     <p className='p-text'>
-                        My goal is to understand these foundations, allowing me to write clean, optimised code.
+                        My goal by understanding these foundations is to be able to write efficient, optimised code.
                         If you're interested you can <a href='https://github.com/coreyhellwege/Advanced-JavaScript-Concepts' target='_blank' rel='noreferrer'>check out my notes here</a>.
                     </p>
 
