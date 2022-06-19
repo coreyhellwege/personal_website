@@ -87,13 +87,12 @@ const TechStack = () => {
                         I'm comfortable building schemas with Mongoose to effectively model MongoDB documents and I enjoy using tools such as MongoDB Compass for 
                         querying, analysing and optimising data during development.
                     </p>
-                </div>
-                <div className='app__tech_stack-description'>
                     <p className='p-text'>
                         Additionally, I have experience working with several server-side Node modules & libraries such as Axios for receiving asynchronous HTTP requests from the client, 
                         Bcrypt for hashing user passwords, and JWT for generating and verifying web auth tokens.
                     </p>
-
+                </div>
+                <div className='app__tech_stack-description'>
                     <h5>Frontend stack</h5>
                     <p className='p-text'>
                         On the client side I'm experienced building user interfaces using modern frameworks such as ReactJS and NextJS.
@@ -109,6 +108,15 @@ const TechStack = () => {
                     <p className='p-text'>
                         I am proficient at writing custom CSS3 and Sass code for styling DOM elements, using features such as FlexBox, variables and nesting.
                         I also have some experience with CSS Animations and I've used the Framer Motion library for creating declarative animations in React.
+                    </p>
+
+                    <h5>Testing</h5>
+                    <p className='p-text'>
+                        Recently I have been focusing on learning test driven development practices with TypeScript and the Jest testing framework.
+                    </p>
+                    <p className='p-text'>
+                        I've been learning about the Jest test suite structure creating unit, integration and end-to-end tests.
+                        So far I've covered basic and advanced assertions and test double objects such as mocks, stubs, spies and fakes.
                     </p>
 
                     <h4>Traffio tech stack</h4>
